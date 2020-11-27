@@ -1,0 +1,13 @@
+name: set ip loobpack
+host: all
+gather_facts: no
+
+tasks:
+	- name: set loopback ipv4 address
+	  ios_13_interface:
+		name: loopback 1
+		ipv4: 10.0.1.1/24
+		name: loopback 2
+		ipv4: 10.0.1.2/24
+		name: loopback 2
+		ipv4: 10.0.1.3/24
